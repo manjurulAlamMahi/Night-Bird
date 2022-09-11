@@ -1,0 +1,83 @@
+/* ==================  Gallary Part Start  ================== */
+
+#gal {
+    padding: 30px 0;
+
+    &::after {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .common_head {
+        padding-bottom: 30px;
+    }
+
+    .gal_row {
+        .gal_col {
+            .gal_img {
+                position: relative;
+
+                .ovrly {
+                    background: rgba(255, 95, 130, 0.5);
+                    border: 10px solid rgba(255, 255, 255, 0.5);
+                    text-align: center;
+                    transform: scale(0);
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        text-align: center;
+                        margin: 0 5px;
+
+                        i {
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            font-size: 20px;
+                            color: #fff;
+                            line-height: 40px;
+                        }
+
+                        &:hover {
+                            i {
+                                background: $hover;
+                                border-color: $hover;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .ovrly {
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            &:last-child {
+                .gal_img {
+
+                    &:last-child {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .load_part {
+        padding-top: 30px;
+
+        a {
+            padding: 10px 22px;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            background: $hover;
+        }
+    }
+}
+
+/* ==================  Gallary Part End  ================== */

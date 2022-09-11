@@ -1,0 +1,99 @@
+/* ==================  Testimonial Part Start  ================== */
+#testi {
+    .common_head {
+        padding-bottom: 30px;
+    }
+
+    .testi_bg {
+        padding: 97px 0;
+
+        &::after {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .testi_slider {
+            .slick-slide {
+                margin: 0 12px;
+            }
+
+            .testi_col {
+                .testi_img {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 35px;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                .testi_txt {
+                    padding: 30px;
+                    background: #353535;
+                    position: relative;
+
+                    .shape_testi {
+                        position: absolute;
+                        top: 50%;
+                        left: -40px;
+                        transform: translateY(-50%);
+                        border-left: 20px solid transparent;
+                        border-top: 20px solid transparent;
+                        border-bottom: 20px solid transparent;
+                        border-right: 20px solid #353535;
+                    }
+
+                    h2 {
+                        color: #fff;
+                        font-size: 16px;
+                    }
+
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #dddddd;
+                        padding: 5px 0;
+                    }
+
+                    i {
+                        font-size: 14px;
+                        color: $hover;
+                    }
+
+                    p {
+                        line-height: 22px;
+                        font-size: 14px;
+                        color: #ddd;
+                        padding-top: 25px;
+                    }
+                }
+            }
+
+            .testi_next,
+            .testi_prev {
+                position: absolute;
+                top: 50%;
+                width: auto;
+                transform: translateY(-50%);
+                font-size: 40px;
+                color: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+
+            .testi_next {
+                right: -30px;
+            }
+
+            .testi_prev {
+                left: -30px;
+            }
+        }
+    }
+
+}
+/* ==================  Testimonial Part End  ================== */

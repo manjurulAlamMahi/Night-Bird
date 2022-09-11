@@ -1,0 +1,107 @@
+/* ==================  Membership Part Start  ================== */
+
+#mem {
+    padding: 80px 0;
+
+    .common_head {
+        padding-bottom: 75px;
+    }
+
+    .mem_col {
+        background: #353535;
+        text-align: center;
+        padding-bottom: 0;
+
+        h2 {
+            color: #fff;
+            font-size: 22px;
+            padding: 20px 0;
+        }
+
+        h3 {
+            color: $hover;
+            font-size: 22px;
+            background: #fff;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            margin: 0 auto;
+            z-index: 1;
+
+            span {
+                font-size: 13px;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 98px;
+                background: #fff;
+                width: 134px;
+                height: 1px;
+                z-index: -1;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 50%;
+                right: 98px;
+                background: #fff;
+                width: 134px;
+                height: 1px;
+                z-index: -1;
+            }
+        }
+
+        ul {
+            padding: 10px 0;
+
+            li {
+                font-size: 14px;
+                color: #dddddd;
+                font-weight: 400;
+                padding: 10px 0;
+            }
+        }
+
+        a {
+            display: block;
+            font-size: 16px;
+            color: #fff;
+            text-transform: uppercase;
+            transform: scale(0);
+        }
+
+        &:hover {
+            padding-bottom: 30px;
+            transform: translateY(-48px);
+
+            h3 {
+                color: #fff;
+                background: $hover;
+
+                &::after {
+                    background: $hover;
+                }
+
+                &::before {
+                    background: $hover;
+                }
+            }
+
+            a {
+                background: $hover;
+                padding: 10px 0;
+                color: #fff;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+/* ==================  Membership Part End  ================== */

@@ -1,0 +1,36 @@
+/* ==================  About Part Start  ================== */
+
+#about {
+    padding: 80px 0;
+
+    .about_text {
+        p {
+            font-family: 400;
+            font-size: 14px;
+            color: #ddd;
+            line-height: 22px;
+            padding: 23px 0;
+
+            span {
+                display: block;
+                padding-top: 25px;
+            }
+        }
+
+        a {
+            padding: 0 19px;
+            color: #fff;
+            font-size: 16px;
+            border: 1px solid #fff;
+            text-transform: uppercase;
+            line-height: 33px;
+
+            &:hover {
+                background: $hover;
+                border-color: $hover;
+            }
+        }
+    }
+}
+
+/* ==================  About Part End  ================== */

@@ -1,0 +1,281 @@
+/* ==================  Font Part Start  ================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+@font-face {
+    src: url(../font_digital_serial_bold/Digital-Serial-Bold.ttf);
+    font-family: 'digital-serial-bold', sans-serif;
+}
+
+.f-opens {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.f-digital {
+    font-family: 'digital-serial-bold', sans-serif;
+    font-weight: 700;
+}
+
+
+/* ==================  Common Part Start  ================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.transition {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.common_bg {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.bg_ovrly {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.ovrly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.common_head {
+    text-align: center;
+
+    h2 {
+        font-family: 'digital-serial-bold', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
+
+.common_footer_head {
+    padding-bottom: 20px;
+    h2 {
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
+
+.common_head_bar {
+    overflow: hidden;
+    height: 30px;
+    width: 40px;
+    margin: 0 auto;
+    position: relative;
+    transform: rotate(180deg);
+
+    .bar {
+        height: 1px;
+        width: 4px;
+        display: inline-block;
+        background-color: $hover;
+        bottom: 0;
+        margin: 0 5px;
+        position: absolute;
+    }
+
+    #bar-a {
+        left: 0;
+        animation: bar1 .5s infinite alternate running linear;
+    }
+
+    #bar-b {
+        left: 6px;
+        animation: bar2 .4s infinite alternate running linear;
+    }
+
+    #bar-c {
+        left: 12px;
+        animation: bar3 .3s infinite alternate running linear;
+    }
+
+    #bar-d {
+        left: 18px;
+        animation: bar4 .4s infinite alternate running linear;
+    }
+
+    #bar-e {
+        left: 24px;
+        animation: bar5 .5s infinite alternate running linear;
+    }
+
+    #bar-f {
+        left: 30px;
+        animation: bar3 .5s infinite alternate running linear;
+    }
+}
+
+body {
+    background: #111111;
+}
+
+@keyframes bar1 {
+    0% {
+        height: 1px;
+    }
+
+    25% {
+        height: 10px;
+    }
+
+    50% {
+        height: 15px;
+    }
+
+    75% {
+        height: 22px;
+    }
+
+    100% {
+        height: 30px;
+    }
+}
+
+@keyframes bar2 {
+    0% {
+        height: 1px;
+    }
+
+    25% {
+        height: 5px;
+    }
+
+    50% {
+        height: 10px;
+    }
+
+    75% {
+        height: 15px;
+    }
+
+    100% {
+        height: 20px;
+    }
+}
+
+@keyframes bar3 {
+    0% {
+        height: 1px;
+    }
+
+    25% {
+        height: 4px;
+    }
+
+    50% {
+        height: 10px;
+    }
+
+    75% {
+        height: 14px;
+    }
+
+    100% {
+        height: 18px;
+    }
+}
+
+@keyframes bar4 {
+    0% {
+        height: 1px;
+    }
+
+    25% {
+        height: 4px;
+    }
+
+    50% {
+        height: 8px;
+    }
+
+    75% {
+        height: 12px;
+    }
+
+    100% {
+        height: 16px;
+    }
+}
+
+@keyframes bar5 {
+    0% {
+        height: 1px;
+    }
+
+    25% {
+        height: 10px;
+    }
+
+    50% {
+        height: 15px;
+    }
+
+    75% {
+        height: 22px;
+    }
+
+    100% {
+        height: 30px;
+    }
+}
+
+/* ==================  Common Part End  ================== */

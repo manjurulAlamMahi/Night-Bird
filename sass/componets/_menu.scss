@@ -1,0 +1,43 @@
+/* ==================  Navigation Part Start  ================== */
+
+#main_nav {
+    border-bottom: 1px solid rgba(255, 95, 130, 0.2);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    .navbar-nav {
+        li {
+            a {
+                text-transform: uppercase;
+                color: #dddddd;
+                font-size: 14px;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+                    -moz-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    -o-transform: translateX(-50%);
+                    opacity: 0;
+                }
+
+                &:hover {
+                    color: $hover;
+
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==================  Navigation Part End  ================== */

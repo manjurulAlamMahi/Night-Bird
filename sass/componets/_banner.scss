@@ -1,0 +1,152 @@
+/* ==================  banner Part Start  ================== */
+.banner_slider {
+    .banner_item {
+        padding: 230px 0 280px 0;
+
+        &::after {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .banner_text {
+            h1 {
+                span {
+                    color: $hover;
+                }
+
+                font-size: 60px;
+                color: #ffffff;
+                text-transform: capitalize;
+                padding-bottom: 4px;
+            }
+
+            h2 {
+                font-size: 22px;
+                font-weight: 400;
+                color: #ffffff;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #ddd;
+                line-height: 22px;
+                padding: 25px 42px;
+            }
+
+            a {
+                padding: 9px 19px;
+                color: #fff;
+                font-size: 16px;
+                border: 1px solid #fff;
+                text-transform: uppercase;
+
+                &:hover {
+                    background: $hover;
+                    border-color: $hover;
+                }
+            }
+        }
+
+
+    }
+
+    .slick-dots {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+
+        li {
+            padding: 0 5px;
+
+            button {
+                font-size: 0;
+                width: 10px;
+                height: 8px;
+                background: #fff;
+                border: none;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: -10px;
+                    left: 0;
+                    width: 10px;
+                    height: 8px;
+                    background: #fff;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: -20px;
+                    left: 0;
+                    width: 10px;
+                    height: 8px;
+                    background: #fff;
+                }
+            }
+        }
+
+        .slick-active {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                width: 10px;
+                height: 8px;
+                background: $hover;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                width: 10px;
+                height: 8px;
+                background: $hover;
+            }
+
+            button {
+                background: $hover;
+
+                &::after {
+                    background: $hover;
+                }
+
+                &::before {
+                    background: $hover;
+                }
+            }
+        }
+    }
+}
+
+
+/* ==================  banner Part End  ================== */

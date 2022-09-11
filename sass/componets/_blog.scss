@@ -1,0 +1,98 @@
+/* ==================  blog Part Start  ================== */
+
+#blog {
+    padding: 80px 0;
+
+    .blog_row {
+        padding: 60px 0 0 0;
+
+        .blog_col {
+            .blog_img {
+                .ovrly {
+                    a {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            .blog_text {
+                border: 1px solid #222;
+                border-top: 1px solid transparent;
+
+                h2 {
+                    color: #fff;
+                    font-size: 16px;
+                    padding: 27px 0 10px 0;
+                    text-transform: uppercase;
+                }
+
+                h4 {
+                    i {
+                        font-size: 13px;
+                        color: #fff;
+                        padding-right: 5px;
+                    }
+
+                    font-size: 13px;
+                    color: #fff;
+                    font-weight: 400;
+                }
+
+                p {
+                    line-height: 22px;
+                    font-size: 14px;
+                    color: #ddd;
+                    padding: 30px 20px 0 20px;
+                }
+
+                a {
+                    padding: 10px 22px;
+                    color: #fff;
+                    font-size: 16px;
+                    border: 1px solid $hover;
+                    text-transform: uppercase;
+                    transform: scale(0);
+                    background: $hover;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-30px);
+
+                .blog_img {
+                    position: relative;
+
+                    .ovrly {
+                        background: rgba(255, 95, 130, 0.5);
+                        border: 10px solid rgba(255, 255, 255, 0.5);
+
+                        a {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            font-size: 20px;
+                            background: #fff;
+                            color: #ff5f83;
+                            line-height: 40px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            text-align: center;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .blog_text {
+                    a {
+                        margin: 30px 0;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==================  blog Part End  ================== */

@@ -1,0 +1,180 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================  footer Part Start  ================== */
+#footer {
+    padding: 30px 0 20px 0;
+
+    &::after {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .footer_contact {
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #ddd;
+            padding:4px 0 20px 0;
+        }
+
+        .contact_part {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-bottom: 16px;
+
+            .contact_icon {
+                width: 35px;
+                height: 35px;
+                background: $hover;
+                font-size: 20px;
+                color: #fff;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 35px;
+                margin-right: 10px;
+            }
+
+            .contact_us {
+                a {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #fff;
+
+                }
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .footer_twit {
+        ul {
+            padding-bottom: 25px;
+            li {
+                i {
+                    padding-right: 5px;
+                }
+
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #ddd;
+
+                span {
+                    display: block;
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .footer_img {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: 27.72%;
+                margin: 0 15px 15px 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .footer_form {
+        .main_form {
+            padding-bottom: 25px;
+            form {
+
+                .name_input,
+                .email_input {
+                    input {
+                        border: 1px solid #ddd;
+                        background: transparent;
+                        color: #ddd;
+                        line-height: 35px;
+                        padding: 0;
+                        padding-left: 15px;
+                    }
+                }
+
+                button {
+                    display: block;
+                    background: $hover;
+                    color: #fff;
+                    font-size: 16px;
+                    width: 100%;
+                    border: $hover;
+                    border-radius: 0;
+                    padding: 0;
+                    line-height: 35px;
+
+                    &:hover {
+                        background: #fff;
+                        color: $hover;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .footer_social {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                a {
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 35px;
+                    margin-right: 10px;
+                    i {
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                    &:hover{
+                        background: $hover;
+                        border-color: $hover;
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==================  footer Part End  ================== */
